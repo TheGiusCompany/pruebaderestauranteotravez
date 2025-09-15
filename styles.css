@@ -13,20 +13,25 @@ header {
   padding: 20px;
 }
 
-h1, h2 {
-  margin: 0 0 10px;
-}
-
 #menu, #order {
   padding: 20px;
 }
 
 .menu-item {
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 10px;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
   background: #fff;
   padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.menu-item img {
+  width: 100px;
+  height: 80px;
+  object-fit: cover;
   border-radius: 6px;
 }
 
@@ -41,6 +46,12 @@ button {
 
 button:hover {
   background: #e85c2a;
+}
+
+#order {
+  background: #fff3eb;
+  border-radius: 6px;
+  padding: 15px;
 }
 
 #whatsapp-btn {
