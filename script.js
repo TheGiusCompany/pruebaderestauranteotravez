@@ -1,5 +1,5 @@
 // CAMBIA ESTE NÚMERO POR EL TUYO (con código de país, sin + ni guiones)
-let whatsappNumber = "04126324523"; // Ejemplo: México +52
+let whatsappNumber = "04126324523"; // Ejemplo: Venezuela +58
 
 let order = [];
 
