@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Pedidos de Comida</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>🍔 Pedidos Rápidos</h1>
+  </header>
+
+  <main>
+    <section id="menu">
+      <h2>Menú</h2>
+      <div class="menu-item">
+        <span>Hamburguesa</span>
+        <button onclick="addToOrder('Hamburguesa')">Añadir</button>
+      </div>
+      <div class="menu-item">
+        <span>Pizza</span>
+        <button onclick="addToOrder('Pizza')">Añadir</button>
+      </div>
+      <div class="menu-item">
+        <span>Tacos</span>
+        <button onclick="addToOrder('Tacos')">Añadir</button>
+      </div>
+    </section>
+
+    <section id="order">
+      <h2>Tu pedido</h2>
+      <ul id="order-list"></ul>
+      <button id="whatsapp-btn">Enviar pedido por WhatsApp</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Pedidos Rápidos</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
