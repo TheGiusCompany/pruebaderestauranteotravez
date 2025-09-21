@@ -8,45 +8,69 @@
 </head>
 <body>
   <header>
-    <h1>🍴 Menú de Restaurante</h1>
+    <h1>🍴 Restaurante Online</h1>
   </header>
 
   <main>
     <section id="menu">
       <h2>Menú</h2>
-      <div class="menu-item">
-        <img src="assets/hamburguesa.jpg" alt="Hamburguesa">
-        <div>
+      <div class="menu-grid">
+        <div class="menu-item">
+          <img src="assets/hamburguesa.jpg" alt="Hamburguesa">
           <h3>Hamburguesa</h3>
-          <p>$80 MXN</p>
+          <p>$8 USD</p>
           <input type="number" min="1" value="1" id="qty-hamburguesa">
-          <button onclick="addToOrder('Hamburguesa', 80, 'qty-hamburguesa')">Añadir</button>
+          <button onclick="addToOrder('Hamburguesa', 8, 'qty-hamburguesa')">Añadir</button>
         </div>
-      </div>
-      <div class="menu-item">
-        <img src="assets/pizza.jpg" alt="Pizza">
-        <div>
+        <div class="menu-item">
+          <img src="assets/pizza.jpg" alt="Pizza">
           <h3>Pizza</h3>
-          <p>$120 MXN</p>
+          <p>$12 USD</p>
           <input type="number" min="1" value="1" id="qty-pizza">
-          <button onclick="addToOrder('Pizza', 120, 'qty-pizza')">Añadir</button>
+          <button onclick="addToOrder('Pizza', 12, 'qty-pizza')">Añadir</button>
         </div>
-      </div>
-      <div class="menu-item">
-        <img src="assets/tacos.jpg" alt="Tacos">
-        <div>
+        <div class="menu-item">
+          <img src="assets/tacos.jpg" alt="Tacos">
           <h3>Tacos</h3>
-          <p>$60 MXN</p>
+          <p>$6 USD</p>
           <input type="number" min="1" value="1" id="qty-tacos">
-          <button onclick="addToOrder('Tacos', 60, 'qty-tacos')">Añadir</button>
+          <button onclick="addToOrder('Tacos', 6, 'qty-tacos')">Añadir</button>
+        </div>
+        <div class="menu-item">
+          <img src="assets/ensalada.jpg" alt="Ensalada">
+          <h3>Ensalada</h3>
+          <p>$5 USD</p>
+          <input type="number" min="1" value="1" id="qty-ensalada">
+          <button onclick="addToOrder('Ensalada', 5, 'qty-ensalada')">Añadir</button>
+        </div>
+        <div class="menu-item">
+          <img src="assets/pasta.jpg" alt="Pasta">
+          <h3>Pasta</h3>
+          <p>$9 USD</p>
+          <input type="number" min="1" value="1" id="qty-pasta">
+          <button onclick="addToOrder('Pasta', 9, 'qty-pasta')">Añadir</button>
+        </div>
+        <div class="menu-item">
+          <img src="assets/sushi.jpg" alt="Sushi">
+          <h3>Sushi</h3>
+          <p>$15 USD</p>
+          <input type="number" min="1" value="1" id="qty-sushi">
+          <button onclick="addToOrder('Sushi', 15, 'qty-sushi')">Añadir</button>
+        </div>
+        <div class="menu-item">
+          <img src="assets/pollofrito.jpg" alt="Pollo Frito">
+          <h3>Pollo Frito</h3>
+          <p>$7 USD</p>
+          <input type="number" min="1" value="1" id="qty-pollofrito">
+          <button onclick="addToOrder('Pollo Frito', 7, 'qty-pollofrito')">Añadir</button>
         </div>
       </div>
     </section>
 
     <section id="order">
-      <h2>Tu pedido</h2>
+      <h2>🛒 Tu pedido</h2>
       <ul id="order-list"></ul>
-      <p id="total">Total: $0 MXN</p>
+      <p id="total">Total: $0 USD</p>
 
       <h3>Datos del Cliente</h3>
       <input type="text" id="customer-name" placeholder="Nombre">
@@ -58,9 +82,11 @@
   </main>
 
   <footer>
-    <p>© 2025 Pedidos Restaurante</p>
+    <p>© 2025 Restaurante Online</p>
   </footer>
 
   <script src="script.js"></script>
 </body>
 </html>
+
+

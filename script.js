@@ -19,7 +19,7 @@ function renderOrder() {
     const li = document.createElement("li");
     const subtotal = entry.price * entry.qty;
     total += subtotal;
-    li.textContent = `${entry.qty} x ${entry.item} - $${subtotal} MXN `;
+    li.textContent = `${entry.qty} x ${entry.item} - $${subtotal} USD `;
     const btn = document.createElement("button");
     btn.textContent = "x";
     btn.onclick = () => {
@@ -29,7 +29,7 @@ function renderOrder() {
     li.appendChild(btn);
     list.appendChild(li);
   });
-  document.getElementById("total").textContent = `Total: $${total} MXN`;
+  document.getElementById("total").textContent = `Total: ${total} USD`;
 }
 
 document.getElementById("whatsapp-btn").addEventListener("click", () => {
@@ -40,7 +40,7 @@ document.getElementById("whatsapp-btn").addEventListener("click", () => {
 
   let msg = `Hola, soy ${name || "Cliente"}, quiero pedir:\n`;
   order.forEach(e => { msg += `- ${e.qty} x ${e.item} ($${e.price} c/u)\n`; });
-  msg += `Total: $${total} MXN\nDirección: ${address || "No proporcionada"}\nComentarios: ${comments || "Ninguno"}`;
+  msg += `Total: ${total} USD\nDirección: ${address || "No proporcionada"}\nComentarios: ${comments || "Ninguno"}`;
 
   const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(msg)}`;
   window.open(url, "_blank");
